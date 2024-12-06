@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>taskone</title>
+    <script>
+        $(document).ready(function (){
+            const InputValue = document.getElementById('FirstInput');                                   //could use querySelector as well but thats specific to CSS
+            const PressButton = document.getElementById('SubButton');
+            const DisplayText = document.getElementById('dispText');
+        
+            PressButton.addEventListener('click', () => {
+                const DisplayValue = InputValue.value;
+                DisplayText.innerHTML = `<p>${DisplayValue}</p>`;                                       //or just put DisplayValue works the same
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--TASK: Develop a simple html website with a text input and button. When the button is pressed, display the
+    text inside the text input to the screen using an HTML element (p, h1, h2, etc.). Put these two components
+    inside of a div with curved corners, centered to the very center of the webpage-->
+    <div id="outerDiv">
+        <div id="innerDiv">
+            <form action="">
+                <h3 id="InLabel">Input String</h3>
+                <input type="text" name="" id="FirstInput"><br><br>
+                <button id="SubButton">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div>
+        <h4 id="dispText">hi</h4>                                                             <!--need to have this tag so we can output from js into it similar to having a variable to store output in and display--> 
+    </div>
+</body>
+</html>

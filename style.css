@@ -1,0 +1,28 @@
+#outerDiv {
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    background-color: aquamarine;
+    padding: 1%;
+    margin-top: 15%;
+}
+#innerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 25%;
+    margin-left: 36%;
+    padding-bottom: 2%;
+}
+#SubButton {
+    margin-left: 30%;
+    border-radius: 5px;
+}
+#InLabel {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 20%;
+}
+#FirstInput{
+    border-radius: 10px;
+}
