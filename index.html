@@ -13,6 +13,7 @@
             const DisplayText = document.getElementById('dispText');
         
             PressButton.addEventListener('click', () => {
+                event.preventDefault();                                                                //to prevent from form submitting ad updating the page
                 const DisplayValue = InputValue.value;
                 DisplayText.innerHTML = `<p>${DisplayValue}</p>`;                                       //or just put DisplayValue works the same
             });
@@ -33,7 +34,7 @@
         </div>
     </div>
     <div>
-        <h4 id="dispText">hi</h4>                                                             <!--need to have this tag so we can output from js into it similar to having a variable to store output in and display--> 
+        <h4 id="dispText"></h4>                                                             <!--need to have this tag so we can output from js into it similar to having a variable to store output in and display--> 
     </div>
 </body>
 </html>
