@@ -1,17 +1,23 @@
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 #outerDiv {
     border: 1px solid black;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aquamarine;
+    width: 30%;
 }
 #innerDiv {
     display: flex;
-    justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    width: 25%;
+    justify-content: center;
+    padding-bottom: 5%;
+    width: 50%;
 }
 #SubButton {
     margin-left: 30%;
