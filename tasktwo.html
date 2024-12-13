@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tasktwo</title>
+    <script>
+        function arith(){
+            var valOne = document.getElementById('ValOne').value;
+            var valTwo = document.getElementById('ValTwo').value;
+            var PressButton = document.getElementById('opButton').value;
+
+            if(PressButton.addEventListener() ){
+
+            }
+
+            var result = eval(valOne * valTwo);
+            document.getElementById('result').textContent = "Result: " + result;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id="outerDivCal">
+            <div id="innerDivCal">
+                <input type="text" name="" id="ValOne">
+                <input type="text" name="" id="ValTwo"><br><br>
+                <div id="DivButton">
+                    <button onclick="arith()" id="OpButton">+</button>
+                    <button onclick="arith()" id="OpButton">-</button>
+                    <button onclick="arith()" id="OpButton">*</button>
+                    <button onclick="arith()" id="OpButton">/</button>
+                </div>
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
